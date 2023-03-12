@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+
+
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body> 
+    <div class="container">
+        <div class="myCard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myLeftCtn"> 
+                        <div class="logout">
+                            <a onclick="logout()">Logout</a>
+                        </div>
+                        <div class="rainbow-text" style="text-align: center;">
+                            <p class="logo">GUVI</p><br>
+                            <p class="quote">A learning platform</p>
+                        </div>
+                        <form class="myForm text-center" action="#" required autocomplete="off">
+                            <header>You can update your details here</header>
+                            <div class="form-group">
+                                <i class="fas fa-calendar-alt"></i>
+                                <input class="myInput" type="text" name="dob" required onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="DOB" id="dob"> 
+                            </div>
+
+                            <div class="form-group contact">
+                                <i class="fas fa-regular fa-phone fa-rotate-90"></i>
+                                <input class="myInput" placeholder="Contact" name="contact" required type="number" id="contact"> 
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fas fa-calendar-plus"></i>
+                                <input class="myInput" type="number" id="age" min="0" max="120" name="age" required placeholder="Age"> 
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fas fa-venus-mars"></i>
+ 
+                                <select id="gender" class="myInput" name="gender" required>
+                                    <option value="" disabled hidden selected>Gender</option>
+                                    <i class="fas fa-person"></i>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Others</option>
+                                </select>
+
+                            </div>
+                            <div class="input-field button">
+                                <input type="submit" class="butt" value="Update Now">
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                        <div class="box">
+                            <header> </header> 
+                            <p>
+                                <span id="basicinfo">Welcome to GUVI platform. Here you can update your details, these details will be stored in the MongoDB.</span> 
+                                <span id="dots">...</span>
+                                <span id="more">
+                                    <br><br>
+                                    <i class="fas fa-solid fa-hand-point-right"></i>
+                                    In this project, HTML, CSS, Javascript, AJAX, MySQL, MongoDB and Redis are the languages and tools used.
+                                    <br>
+                                    <i class="fas fa-solid fa-hand-point-right"></i>
+                                    Here instead of PHP Session, Local Storage is used.
+                                    <br>
+                                    <i class="fas fa-solid fa-hand-point-right"></i>
+                                    Bootstrap is used to handle the responsiveness of the page.
+                                    <br>
+                                    <i class="fas fa-solid fa-hand-point-right"></i>
+                                    Users Login information are stored in MySQL Database and users profile information are stored in the Mongo Database.
+                                </span>
+                            </p>
+                            <input type="button" class="butt_out" id="learnmore" value="Read more"/>
+                        </div>
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+      
+<script src="javascript/profile.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
+
