@@ -21,7 +21,7 @@ continueBtn.onclick = () =>
             {
                 localStorage.setItem("mailId", email.value);
                 localStorage.setItem("name", name.value);
-                location.href="profile.hmtl";
+                location.href="profile.html";
                 console.log(data);
             }else{
                 alert(data);

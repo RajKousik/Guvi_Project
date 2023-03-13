@@ -26,29 +26,9 @@
 
     // Insering Record  
 
-    // $condition = array('email' => 'raj20@gmail.com');
-    // $newData = array('$set' => array(
-    //     'date-of-birth' => '2000-10-10' 
-    //     // 'contact-no' => $contact,
-    //     // 'age' => $age,
-    //     //  'gender' => $gender
-    // ));
-
-    // $options = array('$upsert'=>true);
-
-    // $collection->replaceOne($condition, $newData, $options);
-
-    // // const update = { $set: { name: "Deli Llama", address: "3 Nassau St" }};
-    
-    // // const options = { upsert: true };
-    // // myColl.updateOne(query, update, options);
-
-
-    $collection->insertOne( [ 'date-of-bitrh' => $dob, 'contact-no' => $contact, 'age' => $age, 'gender' => $gender ] ); 
-     
-
-
-
+    $updated =  $collection->updateOne(['email' => $email],
+        ['$set' => ['date-of-birth' => $dob,'contact-no'=>$contact,'age'=>$age,'gender'=>$gender]],['upsert'=>true]
+    );
 
     echo "success";
    
