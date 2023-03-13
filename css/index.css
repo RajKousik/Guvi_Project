@@ -1,8 +1,10 @@
 
 body {
-    background-color: #000000;
+    background-image: url('../assets/images/moon_bg.jpg');
     color: #fff;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     max-width: 400px;
@@ -13,12 +15,13 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0;
+    /* color: whitesmoke; */
 }
 .btn {
     margin: 10px;
 }
 .multicolortext {
-    background-image: linear-gradient(to left, red, chocolate, orange, rgb(255, 6, 222),white, yellow, indigo, blue);
+    background-image: linear-gradient(to left, black, chocolate, orange, rgb(255, 6, 222),brown, yellow, indigo, blue);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

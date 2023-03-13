@@ -4,10 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 .wrapper{
-    background: #ececec;
+    /* background: #ececec; */
     padding: 0 20px 0 20px;
 }
 
+body
+{
+    background-image: url('../assets/images/moon_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .main{
     display: flex;

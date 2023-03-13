@@ -6,7 +6,10 @@
     box-sizing:border-box;
   }
   body {
-    background: #fbf3ff;
+    /* background: #fbf3ff; */
+    background-image: url('../assets/images/moon_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   } 
   .container {
     position: absolute;
