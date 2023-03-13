@@ -54,15 +54,6 @@ body
     position: relative;
     border-radius: 10px 0 0 10px;
 }
-/* .side-image{
-    background-image: url("images/2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 10px 0 0 10px;
-    /* object-fit:; */
-/* }  */
 
 .rainbow-text {
 	font-family: Arial;
@@ -186,37 +177,6 @@ span a:hover{
     text-decoration: underline;
     color: #000;
 }
-
-
-
-/* .row::before
-{
-    content: '';
-    position:absolute;
-    top: -50%;
-    left: -50%;
-    width: 900px;
-    height: 550px;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-} */
-
-
-
-
-
-
 
 
 

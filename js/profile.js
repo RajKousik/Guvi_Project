@@ -78,7 +78,7 @@ continueBtn.onclick = () =>{
             if(data == "success")
             {
                 console.log(data + email);
-                alert("Information Successfully Updated!");
+                alert("Information Successfully Updated in MongoDB!");
             }else{
                 alert(data);
                 console.log(data);
