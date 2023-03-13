@@ -4,17 +4,22 @@ const print = document.querySelector(".myRightCtn .box header");
 
 const name = localStorage.getItem("name");
 const email = localStorage.getItem("mailId");
-
+const hiddenInput = form.querySelector(".hidden input");
 
 var dots = document.getElementById("dots");
 var moreText = document.getElementById("more");
 var learnmore = document.getElementById("learnmore");
 var info = document.getElementById("basicinfo");
 
-if(localStorage.getItem('mailId') == null)
+if(localStorage.getItem('mailId') === null)
 {
     location.href = "login.html";
 }
+else{
+    hiddenInput.value = email;
+    // console.log(hiddenInput.value);
+}
+
 
 function logout()
 {
